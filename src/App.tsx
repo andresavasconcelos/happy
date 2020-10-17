@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import './styles/global.css';
+import Routes from './routes';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    //className é a mesma coisa de class no html--!
+    <Routes />
   );
 }
 
 export default App;
+
+/// ESTUDO ///
+// interface TitleProps{
+//   text: string;
+// }
+
+// function Title(props: TitleProps){
+//   return (
+//   <h1>{props.text}</h1>
+//   )
+// }
+// FIM ESTUDO //
