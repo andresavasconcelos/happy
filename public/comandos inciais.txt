@@ -5,10 +5,7 @@ import {Map} from 'react-leaflet';
 
 yarn add @types/react-leaflet -D
 
-
-
 ///////////////
-
 
 yarn start
 

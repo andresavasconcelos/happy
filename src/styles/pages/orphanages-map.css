@@ -1,5 +1,5 @@
 #page-map{
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
 
     position: relative;
@@ -20,7 +20,7 @@
     font-size: 40px;
     font-weight: 800;
     line-height: 42px;
-    margin-top: 66px;
+    margin-top: 64px;
 }
 
 #page-map#page-map aside p{
@@ -31,7 +31,6 @@
 #page-map#page-map aside footer{
     display: flex;
     flex-direction: column;
-
     line-height: 24px;
 }
  
@@ -39,11 +38,17 @@
     font-weight: 800;    
 }
 
+#page-map .leaflet-container{
+    z-index: 5;
+}
+
 #page-map .create-orphanage{
     position: absolute;
     right: 40px;
     bottom: 40px;
-    left: 1430px;
+    /* left: 1430px; */
+
+    z-index: 10;
 
     width: 64px;
     height: 64px;
