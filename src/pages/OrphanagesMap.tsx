@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
-import { FiPlus } from 'react-icons/fi';
+import {Link} from 'react-router-dom';
+import {FiPlus} from 'react-icons/fi';
 
 import '../styles/pages/orphanages-map.css';
 import mapMarkerImg from '../img/map-marker.svg';
@@ -12,6 +12,7 @@ function OrphanagesMap(){
            <aside>
                <header>
                    <img src={mapMarkerImg} alt="Happy"/>
+
                    <h2>Escolha um orfanato no mapa</h2>
                    <p>Muitas crianças estão esperando a sua visita :)</p>
                </header>
