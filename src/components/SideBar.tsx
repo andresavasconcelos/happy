@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom';
 
 import mapMarkerImg from '../img/map-marker.svg';
 
-import '../styles/components/sidebar.css'
+import '../styles/components/sidebar.css';
 
 export default function SideBar() {
 

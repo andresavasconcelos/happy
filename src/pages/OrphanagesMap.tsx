@@ -21,7 +21,7 @@ function OrphanagesMap(){
     useEffect(() => {
         api.get('orphanages').then(response => {
             setOrphanages(response.data);
-        })
+        });
     }, []);
     return(
        <div id="page-map">
@@ -40,7 +40,7 @@ function OrphanagesMap(){
            </aside>
            
            <Map 
-                center={[-27.2892852,-49.6481892]}
+                center={[-23.6665219,-46.5109832]}
                 zoom={15}
                 style={{width:'100%', height:'100%'}}
             >
@@ -58,12 +58,12 @@ function OrphanagesMap(){
                             >
                             <Popup closeButton={false} minWidth={240} maxWidth={240} className="map-popup">
                                 {orphanage.name}
-                                <Link to={`/orphanage/${orphanage.id}`}>
+                                <Link to={`/orphanages/${orphanage.id}`}>
                                     <FiArrowRight size={20} color="FFF" />
                                 </Link>
                             </Popup>
                         </Marker>  
-                    );
+                    )
                 })}              
             </Map>
            
